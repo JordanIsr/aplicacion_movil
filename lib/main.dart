@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Login Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -25,14 +26,14 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200], // Fondo más suave
+      backgroundColor: const Color.fromARGB(255, 255, 245, 160), // Fondo más suave
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(32.0),
           child: Container(
             padding: const EdgeInsets.all(24.0),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: const Color.fromARGB(255, 255, 255, 255),
               borderRadius: BorderRadius.circular(20.0),
               boxShadow: [
                 BoxShadow(
